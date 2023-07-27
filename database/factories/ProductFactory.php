@@ -38,7 +38,6 @@ class ProductFactory extends Factory
         return [
             //
             'title' => $name,
-            // 'title' => fake()->numberBetween(10, 200) . " kg",
             'description' => fake()->realTextBetween($minNbChars = 160, $maxNbChars = 200, $indexSize = 2),
             'status' => fake()->randomElement([true, false]),
             'price' => fake()->randomFloat(2, 10, 1000),
